@@ -1,0 +1,174 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+
+    
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    color: #333;
+    line-height: 1.6;
+    opacity: 0.8;
+
+    
+}
+    
+body {
+    position: relative; /* Make the body element relative for absolute positioning */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+/* Adjust text color and other styles as needed */
+
+
+
+header h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    
+}
+
+header nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #93c83d;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+section ul li {
+    color: #aba9a9;
+}
+
+h2 {
+    color:rgb(242, 232, 232);
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #aba9a9;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff8533;
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: nowrap;
+   
+    gap: 20px;
+}
+
+.anime-card {
+    
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100px; /* Adjust card width as needed */
+    margin-right: 10px; /* Add spacing between cards */
+    
+}
+
+.anime-card img {
+    width: 300px;
+    height: 150px;
+    border-bottom: 1px solid #ddd;
+    width: 100%; /* Make images fill the entire card */
+    
+}
+
+.anime-card h3 {
+    padding: 10px;
+    color: #afaa1d;
+    margin: 0;
+    font-size: small;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates a grid with flexible columns */
+    gap: 20px; /* Adds spacing between grid items */
+    white-space: nowrap; /* Prevent wrapping to a new line */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+}
+
+.anime-list {
+    border: 1px solid #ddd; /* Adds borders to grid items for visualization */
+    padding: 10px; /* Adds padding to grid items for spacing */
+    text-align: center; /* Centers text content */
+    display: inline-flex; /* Display flex items in a single row */
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+}
+
+.anime-list img {
+    max-width: 100%; /* Ensures images resize proportionally within grid items */
+}
+
+.anime-list h3 {
+    margin-top: 10px; /* Adds spacing between image and title */
+}
